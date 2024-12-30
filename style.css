@@ -1,0 +1,352 @@
+
+body {
+    margin: 0;
+    color: white;
+}
+
+.navbar {
+    padding: 5px 10px;
+    background-color: #111;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    height:20px;
+    
+}
+.navbar .navbar-brand{
+    font-size: 30px;
+}
+.nav-link {
+    color: white !important;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-link.active, .nav-link:hover {
+    color: #ffcc00 !important;
+    border-bottom: 1px solid #ffcc00;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #111;
+}
+
+.hero-img {
+    width: 400px;
+    height: 400px;
+    border: 5px solid #ffcc00;
+    margin-bottom: 20px;
+}
+
+.hero-section h3{
+    font-size: 40px;
+}
+
+.hero-section .highlight {
+    color: #ffcc00;
+}
+
+.hero-section p{
+    font-size: 26px;
+}
+.hero-section .btn a{
+    background-color:#ffcc00 ;
+    color: black;
+    font-weight: 600;
+    size: 90px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* About Section */
+.about-section {
+    background-color: #222;
+    color: white;
+}
+
+.about-img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #ffcc00;
+}
+
+.about-section h2 {
+    color: #ffcc00;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.about-section h4{
+    color: #ffcc00;  
+}
+.about-section  p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 19px;
+}
+
+.about-section ul {
+    padding-left: 0;
+}
+.about-section .col-md-8 p{
+    font-size:20px;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.about-section a.btn-warning {
+    background-color: #ffcc00;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+.about-section a.btn-warning:hover {
+    background-color: #e6b800;
+    color: black;
+}
+
+/* Skills Section */
+.skills-section {
+    background-color: #111;
+    color: white;
+}
+
+.skills-section p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skills-section .progress {
+    height: 10px;
+    background-color: #222;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skills-section .progress-bar {
+    background-color: #ffcc00;
+}
+
+/* Resume Section */
+.resume-section {
+    background-color: #111;
+    color: white;
+}
+
+.resume-section .resume-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.resume-section .resume-card:hover {
+    transform: translateY(-5px);
+}
+
+.resume-section h3 {
+    color: #ffcc00;
+}
+
+.resume-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resume-section ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.resume-section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffcc00;
+}
+
+.resume-section .btn-warning {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/* Projects Section */
+.projects-section .project-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 450px; /* Ensures equal height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Balances content vertically */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+}
+
+/* Fixed size for images */
+.projects-section .project-card img {
+    height: 200px;
+    width: 100%; /* Makes the image responsive */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.5s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for images */
+.projects-section .project-card img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Add blinking animation when image is clicked */
+.projects-section .project-card img:active {
+    animation: blink 0.6s;
+}
+
+/* Define blinking animation */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+/* Certificates Section */
+.certificates-section {
+    background-color: #111;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+
+
+.certificates-section .certificate-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    height:250px;
+    
+}
+
+.certificates-section .certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificates-section h5 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.certificates-section .btn-warning {
+    background-color: #ffcc00;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 10px;
+}
+
+.certificates-section .btn-warning:hover {
+    background-color: #e6b800;
+}
+
+/* Contact Section */
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, #2b2b2b, #1a1a1a);
+  }
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .contact-left-title h1 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 50px;
+    margin-bottom: 5px;
+  }
+  .contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a35aab;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .contact-input {
+    width: 450px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+    font-size: 20px;
+  }
+  .contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+  }
+  .contact-input:focus {
+    border: 2px solid #ff994f;
+  }
+  .contact-input:placeholder {
+    color: #a9a9a9;
+  }
+  .contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+  }
+  .contact-left button img {
+    height: 15px;
+  }
+  .contact-right img {
+    width: 500px;
+  }
+  @media (max-width: 800px) {
+    .contact-input {
+      width: 80vw;
+    }
+    .contact-right {
+      display: none;
+    }
+  }
